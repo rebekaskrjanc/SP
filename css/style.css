@@ -1,8 +1,9 @@
 header{
-	background-image: linear-gradient(#04519b, #044687 60%, #033769);
+	background: linear-gradient(to right, rgba(158,97,123,1), rgba(158,97,123,1), rgba(158,97,123,1));
 	color:#fff;
 	min-height:100px;
-	padding-top:25px;
+	
+	padding-bottom: 10px;
 }
 
 header form{
@@ -10,11 +11,17 @@ header form{
 }
 
 header .logo{
+	padding-top: 10px;
 	float:left;
 }
 
+header .form-inline {
+	padding-top: 25px
+}
+
+
 .panel-heading{
-	background-image: linear-gradient(#04519b, #044687 60%, #033769);
+	background-image: linear-gradient(rgba(158,97,123,1), rgba(158,97,123,1), rgba(158,97,123,1));
 	color:#fff !important;
 }
 
@@ -83,7 +90,7 @@ header .logo{
 }
 
 .friends li{
-	list-style: none;
+	list-style: none; /*brez bullet pointov*/
 	padding:0 5px;
 	display:inline;
 	float:left;
@@ -144,12 +151,12 @@ header .logo{
 footer{
 	background:#f4f4f4;
 	height:90px;
-	color:#04519b;
+	color:rgba(158,97,123,1);
 	font-weight: bold;
 	text-align: center;
 	padding-top:40px;
 	margin-top:30px;
-	border-top:7px solid #04519b;
+	border-top:7px solid rgba(158,97,123,1);
 }
 
 

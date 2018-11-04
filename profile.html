@@ -5,34 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile: Dobble Social Network</title>
+    <title>Profile: Dancing Things Social Network</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
 
   <body>
     <header>
       <div class="container">
-        <img src="img/logo.png" class="logo">
-        <form class="form-inline">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail3">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword3">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">Sign in</button><br>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-          </div>
-        </form>
+        <img src="img/white_logo_transparent_background.png" class="logo">
+        
       </div>
     </header>
     <nav class="navbar navbar-default">
@@ -47,11 +33,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="groups.html">Groups</a></li>
             <li><a href="photos.html">Photos</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li class="active"><a href="profile.html">Profile</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -65,7 +51,7 @@
               <h1 class="page-header">John Doe</h1>
               <div class="row">
                 <div class="col-md-4">
-                  <img src="img/user.png" class="img-thumbnail">
+                  <img src="img/user-default.jpg" class="img-thumbnail">
                 </div>
                 <div class="col-md-8">
                   <ul>
@@ -74,7 +60,7 @@
                     <li><strong>City: </strong>Boston</li>
                     <li><strong>State: </strong>Massachusetts</li>
                     <li><strong>Gender:</strong> Male</li>
-                    <li><strong>Profession: </strong>Web Developer</li>
+                    <li><strong>Dance: </strong>Street dance</li>
                   </ul>
 
                 </div>
@@ -103,6 +89,55 @@
                 </form>        
               </div>
             </div>
+            <div class="panel panel-default post">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="delete-button">
+                    <button type="button" class="btn btn-default"><i class="fas fa-trash-alt"></i></button>
+                  </div>
+                  <div class="col-sm-2">
+                    <a class="post-avatar thumbnail" href="img/user-default.jpg"><img src="img/user-default.jpg"><div class="text-center">Me</div></a>
+                    <div class="likes text-center">7 Likes</div>
+                  </div><!-- col-sm-2 end -->
+                  <div class="col-sm-10">
+                    <div class="bubble">
+                      <div class="pointer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget ante eget feugiat. Praesent adipiscing tortor eu tincidunt tempus. Sed convallis est in ante sodales, sit amet consectetur leo commodo. </p>
+                      </div>
+                      <div class="pointer-border"></div>
+                    </div><!-- bubble end -->
+                    <p class="post-actions"><a href="#">Like</a> - <a href="#">Comment</a> - <a href="#">Share</a> - <a href="#">Follow</a> </p>
+                    <div class="comment-form">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Comment">
+                        </div>
+                        <button type="submit" class="btn btn-default">Add</button>
+                      </form>
+                    </div><!-- comment form end -->
+                    <div class="clearfix"></div>
+
+                    <div class="comments">
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/user-default.jpg"></a>
+                        <div class="comment-text">
+                          <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/user-default.jpg"></a>
+                        <div class="comment-text">
+                          <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
                 </div>
               </div>
             </div>
@@ -115,18 +150,18 @@
               </div>
               <div class="panel-body">
                 <ul>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
-                  <li><a class="thumbnail" href="profile.html"><img src="img/user.png"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
+                  <li><a class="thumbnail" href="profile.html"><img src="img/user-default.jpg"></a></li>
                 </ul>
                 <div class="clearfix"></div>
                 <a class="btn btn-primary" href="#">View All Friends</a>
@@ -141,19 +176,19 @@
                 <div class="group-item">
                   <img src="img/group.png">
                   <h4><a href="#">Sample Group One</a></h4>
-                  <p>This is a Dobble social network sample group</p>
+                  <p>This is a Dancing Things social network sample group</p>
                 </div>
                 <div class="clearfix"></div>
                 <div class="group-item">
                   <img src="img/group.png">
                   <h4><a href="#">Sample Group One</a></h4>
-                  <p>This is a Dobble social network sample group</p>
+                  <p>This is a Dancing Things social network sample group</p>
                 </div>
                 <div class="clearfix"></div>
                 <div class="group-item">
                   <img src="img/group.png">
                   <h4><a href="#">Sample Group One</a></h4>
-                  <p>This is a Dobble social network sample group</p>
+                  <p>This is a Dancing Things social network sample group</p>
                 </div>
                 <div class="clearfix"></div>
                 <a class="btn btn-primary" href="#">View All Groups</a>
@@ -167,7 +202,7 @@
 
     <footer>
       <div class="container">
-        <p>Dobble Copyright &copy; 2015, All Rights Reserved</p>
+        <p>Dancing Things Copyright &copy; 2018, All Rights Reserved</p>
       </div>
     </footer>
 
