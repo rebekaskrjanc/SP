@@ -14,6 +14,13 @@ Social omrežje omogoča:
 -Brisanje lastnih objav (tekst, slike video)
 -Integracija aplikacije z zunanjim virom (ostala socialna omrežja; povezava na instagram, fb in pinterest profil)
 
+ZASLONSKE MASKE:
+-sign up page sign-up.html
+-home page index.html
+-members page members.html
+-groups page groups.html
+-profile page profile.html
+-photos page photos.html
 
 Delovanje strani sem preverila v treh različnih brskalnikih (Chrome, Safari in Firefox).
 V vest tree brskalnikih se stran obnaša in izgleda enako. 
