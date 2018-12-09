@@ -1,0 +1,63 @@
+extends layout
+
+include _include/skupneHTMLfunkcije.pug
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1= glavaStrani.naslov Stari grad Celje
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            +prikaziOceno(lokacija.ocena)
+          p= lokacija.naslov
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Delovni čas
+            .panel-body
+              each termin in lokacija.delovniCas
+                p
+                  | #{termin.dnevi} :
+                  if termin.zaprto
+                    | zaprto
+                  else
+                    | #{termin.odprtje} - #{termin.zaprtje}
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Lastnosti
+            .panel-body
+              each lastnost in lokacija.lastnosti
+                span.label.label-warning
+                  span.glyphicon.glyphicon-ok
+                  | &nbsp;#{lastnost}
+                | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Zemljevid lokacije
+            .panel-body
+              - zemljevid = + lokacija.koordinate.lat + ',' + lokacija.koordinate.lng + '&z=15&output=embed'
+              .embed-responsive.embed-responsive-4by3
+                iframe.embed-responsive-item(frameborder='0', src=zemljevid
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.btn-xs.pull-right(href='/lokacija/komentar/nov') Dodaj komentar
+              h2.panel-title Komentarji uporabnikov
+            .panel-body.komentar-vsebnik
+              each komentar in lokacija.komentarji
+                .row
+                  .komentar
+                    .well.well-sm.komentar-glava
+                      span.rating
+                        +prikaziOceno(komentar.ocena)
+                      span.komentarAvtor &nbsp;#{komentar.avtor} Dejan Lavbič
+                      small.komentarDatum &nbsp;#{komentar.datum} 7. november, 2018
+                    .col-xs-12
+                      p !{(komentar.besediloKomentarja).replace(/\n/g, '<br/>')}
+    .col-xs-12.col-md-3
+      p.lead #{lokacija.naziv} #{stranskaOrodnaVrstica.kontekst}
+      p= stranskaOrodnaVrstica.poziv

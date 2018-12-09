@@ -33,7 +33,7 @@ module.exports.podrobnostiLokacije = function(req, res) {
       naziv: 'Stari grad Celje',
       naslov: 'Cesta na grad 78, 3000 Celje, Slovenija',
       ocena: 3,
-      lastnosti: ['slikovit razgled', 'vstopnina', 'otrokom prijazno'],
+      lastnosti: [ 'slikovit razgled', 'vstopnina', 'otrokom prijazno' ],
       koordinate: {lat: 46.219849, lng: 15.271601},
       delovniCas: [{
         dnevi: 'ponedeljek - petek',

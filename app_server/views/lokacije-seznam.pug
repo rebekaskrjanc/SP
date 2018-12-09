@@ -16,10 +16,7 @@ block content
             h4
               a(href="/lokacija")= lokacija.naziv Stari grad Celje
               small &nbsp;
-                - for (var i = 1; i <= lokacija.ocena; i++)
-                  span.glyphicon.glyphicon-star
-                - for (var i = lokacija.ocena; i < 5; i++)
-                  span.glyphicon.glyphicon-star-empty
+                +prikaziOceno(lokacija.ocena)
               span.badge.pull-right.badge-default= lokacija.razdalja 700m
             p.address= lokacija.naslov Cesta na grad 78, 3000 Celje, Slovenija
             p
