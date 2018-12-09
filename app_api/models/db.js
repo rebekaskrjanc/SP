@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var dbURI = 'mongodb://localhost/edugeocache';
-mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true });mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true });
 
 mongoose.connection.on('connected', function() {
   console.log('Mongoose je povezan na ' + dbURI);
@@ -42,6 +42,3 @@ process.on('SIGTERM', function() {
     process.exit(0);
   });
 });
-
-require('./lokacije');
-

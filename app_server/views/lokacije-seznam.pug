@@ -14,15 +14,15 @@ block content
         each lokacija in lokacije
           .col-xs-12.list-group-item
             h4
-              a(href="/lokacija")= lokacija.naziv Stari grad Celje
+              a(href="/lokacija")= lokacija.naziv
               small &nbsp;
                 +prikaziOceno(lokacija.ocena)
-              span.badge.pull-right.badge-default= lokacija.razdalja 700m
-            p.address= lokacija.naslov Cesta na grad 78, 3000 Celje, Slovenija
+              span.badge.pull-right.badge-default= lokacija.razdalja
+            p.address= lokacija.naslov
             p
               each lastnost in lokacija.lastnosti
                 span.label.label-warning= lastnost
-                
+                | &nbsp;
     .col-xs-12.col-sm-4
       p.lead Iščete lokacijo za kratkočasenje? EduGeoCache vam pomaga pri iskanju zanimivih lokacij v bližini. Mogoče imate kakšne posebne želje? Naj vam EduGeoCache pomaga pri iskanju bližnjih zanimivih lokacij.
       
