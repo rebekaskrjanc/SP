@@ -49,12 +49,12 @@
           <div class="col-md-8">
             <h1 class="page-header">Photos</h1>
             <ul class="photos gallery-parent">
-              <li><a href="img/sample1.jpg" data-title="Image One" data-footer="This is image 1" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image one"><img src="img/3eb3a12e720e3bea5ab58f96e19ee84a.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample2.jpg" data-title="Image Two" data-footer="This is image 2" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image two"><img src="img/cd70bd431ec9d49b14a6fb7df4a688bd.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample3.jpg" data-title="Image Three" data-footer="This is image 3" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image three"><img src="img/be298922f82a505668690e7fbf10d9dd.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample4.jpg" data-title="Image Four" data-footer="This is image 4" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image four"><img src="img/aa457df731ec87b4d702ec593953d84a.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample5.jpg" data-title="Image Five" data-footer="This is image 5" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image five"><img src="img/fd353834f32b0d01754f0c6097d40795.jpg" class="img-thumbnail"></a></li>
-              <li><a href="img/sample6.jpg" data-title="Image Six" data-footer="This is image 6" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image six"><img src="img/c6bc5645349ab8766059c6fd48f254b5.jpg" class="img-thumbnail"></a></li>
+               <li><a href="img/be298922f82a505668690e7fbf10d9dd.jpg" data-title="Image One" data-footer="This is image 1" data-toggle="lightbox" data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image one"><img src="img/be298922f82a505668690e7fbf10d9dd.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/c6bc5645349ab8766059c6fd48f254b5.jpg" data-title="Image Two" data-footer="This is image 2" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image two"><img src="img/c6bc5645349ab8766059c6fd48f254b5.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/aa457df731ec87b4d702ec593953d84a.jpg" data-title="Image Three" data-footer="This is image 3" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image three"><img src="img/aa457df731ec87b4d702ec593953d84a.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/fd353834f32b0d01754f0c6097d40795.jpg" data-title="Image Four" data-footer="This is image 4" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image four"><img src="img/fd353834f32b0d01754f0c6097d40795.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/3eb3a12e720e3bea5ab58f96e19ee84a.jpg" data-title="Image Five" data-footer="This is image 5" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image five"><img src="img/3eb3a12e720e3bea5ab58f96e19ee84a.jpg" class="img-thumbnail"></a></li>
+              <li><a href="img/cd70bd431ec9d49b14a6fb7df4a688bd.jpg" data-title="Image Six" data-footer="This is image 6" data-toggle="lightbox"  data-gallery="mygallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top" title="This is image six"><img src="img/cd70bd431ec9d49b14a6fb7df4a688bd.jpg" class="img-thumbnail"></a></li>
             </ul>
           </div><!-- col-md-8 end -->
 
@@ -126,6 +126,16 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    
+    <script src="js/ekko-lightbox.js"></script>
+    <script>
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+}); 
+      $(function () {
+  $('[data-hover="tooltip"]').tooltip()
+})
+    </script>
   </body>
 </html>
+
