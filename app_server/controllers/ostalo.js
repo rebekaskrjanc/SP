@@ -1,3 +1,11 @@
+var request = require('request');
+var apiParametri = {
+  streznik: 'http://localhost:' + process.env.PORT
+};
+if (process.env.NODE_ENV === 'production') {
+  apiParametri.streznik = 'https://dancingthings.herokuapp.com/';
+}
+
 /* Vrni stran s podrobnostmi*/
 module.exports.informacije = function(req, res) {
   res.render('index', { title: 'Informacije o aplikaciji' });
@@ -26,6 +34,15 @@ module.exports.homepage = function(req, res) {
 module.exports.editprofile = function(req, res) {
   res.render('editprofile', { title: 'Uredi profil' });
 };
+/* Vrni stran Editprofile */
+module.exports.signupRender = function(req, res) {
+  res.render('signup', { title: 'Sign Up' });
+};
+
+module.exports.signup = function(req, res) {
+  res.render('signup', { title: 'Sign Up' });
+};
+
 /* Vrni stran Comments */
 module.exports.comments = function(req, res) { //26 272 lecture udemy
   //res.render('comments', { title: 'Prikazi komentarje' });
