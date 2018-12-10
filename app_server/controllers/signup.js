@@ -29,9 +29,11 @@ module.exports.signup = async function(req, res){
       await asyncSignUp(parametriZahteve);
     } else {
       errorMsg = "Passwords dont match."
+      console.log("errrr")
     }
   } else {
     errorMsg = "Enter required fields."
+    console.log("errrr")
   }
 
   if(errorMsg) {

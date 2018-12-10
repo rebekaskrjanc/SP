@@ -3,6 +3,7 @@ function Validate() {
   if (username.value == "") {
     username.style.border = "1px solid red";
     document.getElementById('username_div').style.color = "red";
+    console.log("Username is required");
     name_error.textContent = "Username is required";
     username.focus();
     return false;

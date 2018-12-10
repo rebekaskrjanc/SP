@@ -17,11 +17,17 @@ html
             br
             form
               .form-group
-                label(for='formGroupExampleInput') Name
-                input#formGroupNameInput.form-control(name="name", type='text', placeholder='Name input')
+                label(for='formGroupExampleInput') Username
+                input#username_div.form-control(name="name", type='text', placeholder='Name input')
               .form-group
                 label(for='formGroupExampleInput2') Email
-                input#formGroupEmailInput.form-control(name="email", type='text', placeholder='Email input')
+                input#email_div.form-control(name="email", type='text', placeholder='Email input')
+              .form-group
+                label(for='formGroupExampleInput2') Password
+                input#password_div.form-control(name="password", type='password', placeholder='Password input')
+              .form-group
+                label(for='formGroupExampleInput2') Retype password
+                input#pass_confirm_div.form-control(name="password", type='password', placeholder='Password input')
               .form-group
                 label(for='formGroupExampleInput2') City
                 input#formGroupCityInput.form-control(name="city", type='text', placeholder='City input')
@@ -34,8 +40,6 @@ html
               .form-group
                 label(for='formGroupExampleInput2') Dance
                 input#formGroupDanceInput.form-control(name="dance", type='text', placeholder='Dance input')
-            br
-            br
             button.btn.btn-default(type='submit') Submit Changes
           .right-box
           //.logo
