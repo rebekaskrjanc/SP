@@ -27,7 +27,7 @@ header .form-inline {
 
 .bubble{
 	position:relative;
-	width:580px;
+	width:100%;
 	min-height:65px;
 	padding:15px;
 	background:#fff;
@@ -164,4 +164,14 @@ footer{
 	.members p{
 		padding-top:40px;
 	}
+}
+
+.errorMsg {
+	color: red;
+}
+
+.postListing {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }

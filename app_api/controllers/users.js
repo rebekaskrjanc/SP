@@ -6,6 +6,11 @@ var vrniJsonOdgovor = function(res, status, data) {
   res.json(data);
 };
 
+module.exports.deleteUserDB = function(req, res) {
+  
+  return User.remove({});
+};
+
 module.exports.getUsers = function(req, res) {
   User
     .find()
@@ -44,8 +49,9 @@ module.exports.getUser = function(req, res){
 };
 
 module.exports.updateUser = function(req, res) {
+  
   if(req.params && req.params.userId) {
-    if(req.body.username || req.body.password || req.body.posts) {
+    if(req.body.username || req.body.posts) {
       vrniJsonOdgovor(res, 400, { 
         "sporočilo": "Attribute is not updatable."
       });
@@ -71,14 +77,17 @@ module.exports.createUser = function(req, res) {
   User.create({
     username: req.body.username,
     password: req.body.password,
-    name: req.body.name,
+    passwordRetype: req.body.passwordRetype,
+    firstname: req.body.firstname,
     email: req.body.email,
     state: req.body.state,
+    city: req.body.city,
     gender: req.body.gender,
     dance: req.body.dance
 
   }, function(error, user) {
     if (error) {
+      console.log(error);
       vrniJsonOdgovor(res, 400, error);
     } else {
       vrniJsonOdgovor(res, 201, user);

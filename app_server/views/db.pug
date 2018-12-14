@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  br
+  h3 Delete all elements from collections or add new elements to them.
+  - urlDelDB = '/deleteUserDB'
+  a.btn.btn-default(href=urlDelDB) Delete
+  - urlEditDB = '/addData'
+  a.btn.btn-default(href=urlEditDB) Add Data 
+
+ 
+  //vključim users.js in kličem funkcijo delete user
+  //vključim še ostala dva
+
