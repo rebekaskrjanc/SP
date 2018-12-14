@@ -50,7 +50,7 @@ $ npm start
 * ### [Sign Up screen](screenshots/signup.png):
 	* User can create an account (sign up requirements listed above).
 	
-* ### [News Feed](screeshots/index.png) and [Student's requests tab](docs/indexTutor.png):
+* ### [News Feed](screeshots/index.png):
 	* Users can view the posts, and comment on them posts. If no posts are visible, that's because there's no post in the database yet. You can make your first post by entering some text in the "Write on the wall" field.
 	
 * ### [User Profile](screeshots/profile.png):
