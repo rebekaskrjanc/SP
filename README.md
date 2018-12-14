@@ -42,22 +42,22 @@ $ npm start
 ## Sign Up page - Inputs (defined in sign-up-validation.js)
 * On Sign Up page, all of the fields need to be filled out. 
 * Name needs to be at least 3 characters long.
-* Email needs to have in a proper format
+* Email needs to have in a proper format 
 * Both passwords on sign up page must match
 
 ## Feautured Screens
 
 * ### [Sign Up screen](screenshots/signup.png):
-	* User can create an account. He can choose between two roles: tutor and student. Account creation is personalized based on choosen role.
+	* User can create an account (sign up requirements listed above).
 	
 * ### [News Feed](screeshots/index.png) and [Student's requests tab](docs/indexTutor.png):
-	* Users can view the news, view and comment on the posts. 
+	* Users can view the posts, and comment on them posts. If no posts are visible, that's because there's no post in the database yet. You can make your first post by entering some text in the "Write on the wall" field.
 	
 * ### [User Profile](screeshots/profile.png):
-	* Users can see their profile page and edit it, bu clicking on the edit button.
+	* Users can see their profile page and edit it, by clicking on the edit button. Delete button deletes the user.
 
 * ### [Edit profile](screeshots/editprofile.png):
-	* Users can edit their profile by providing the new information about them and clicking submit.
+	* Users can edit their profile by providing the new information about them and clicking submit. Not all fields are mandatory. If entered, both passwords must match.
 	
 * ### [Members](screeshots/members.png):
 	* Users can se the other members of the Dancing Things App.
