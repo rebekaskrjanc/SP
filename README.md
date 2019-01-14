@@ -43,7 +43,7 @@ RECAPTCHA_SECRET=6LflaIkUAAAAAAfR5X9W2ICth8VNNFuljBh8ymBT
 
 ## App urls
 * Local app url: http://localhost:3000/
-* Heroku app url: https://oddaja-sp.herokuapp.com/homepage
+* Heroku app url: https://oddaja-sp.herokuapp.com/db
 
 ## Registration page - Inputs (defined in sign-up-validation.js)
 * On Sign Up page, all of the fields need to be filled out. 
@@ -88,7 +88,7 @@ RECAPTCHA_SECRET=6LflaIkUAAAAAAfR5X9W2ICth8VNNFuljBh8ymBT
 * Viewer - None of the pages are fully visible to them. There is a message displayed on every page which lets them know that they're not logged in. 
 
 
-##Speed testing in Chrome and Firefox
+## Speed testing in Chrome and Firefox
 
 | Views :                        |     Firefox   |  Chrome |
 | -------------------------------|:-------------:| -------:|
@@ -101,7 +101,7 @@ RECAPTCHA_SECRET=6LflaIkUAAAAAAfR5X9W2ICth8VNNFuljBh8ymBT
 
 Chrome needed significantly more time to load registration view beacuse of all the files it needed to load to make reCaptcha work. While Firefox also had to load reCaptcha related files, it did it much faster. The homepage was loaded the slowest in firefox but only slightly. With all the scripts and other files that are required to load to make all the views work, the home view had to make the most GET requests to get all the data from the database.
 
-##Apache jMeter tests
+## Apache jMeter tests
 * ### [Machine specifications]
 	* Processor: 3,1 GHz Intel Core i5
 	* RAM 16GB
