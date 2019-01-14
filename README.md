@@ -38,11 +38,40 @@ $ npm install --save angular-recaptcha
 ```
 #### Your .env file should include:
 
+JWT_GESLO=toleNašeGeslo
 RECAPTCHA_SECRET=6LflaIkUAAAAAAfR5X9W2ICth8VNNFuljBh8ymBT
+
+#### Install UglifyJS
+
+```bash
+$ npm install uglify-js --save
+```
+### Install jsonwebtoken
+```bash
+$ npm install jsonwebtoken --save
+```
+### Install dotenv
+```bash
+$ npm install dotenv --save
+```
+#### Configuration of Passport
+```bash
+$ npm install passport --save
+```
+```bash
+$ npm install passport-local --save
+```
+### Install express-jwt
+```bash
+$ npm install express-jwt --save
+```
+
+
+
 
 
 ## App urls
-* Local app url: http://localhost:3000/
+* Local app url: http://localhost:3000/db
 * Heroku app url: https://oddaja-sp.herokuapp.com/db
 
 ## Registration page - Inputs (defined in sign-up-validation.js)
